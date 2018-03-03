@@ -1,0 +1,99 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1311698657,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TicketBooking.init(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Data retrieval from a ticket bookin webservice",
+        "description": "",
+        "id": "testing-rest-webservice;data-retrieval-from-a-ticket-bookin-webservice;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 102942198,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user wants to get info by passing content type is\"json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 50
+                }
+              ],
+              "location": "TicketBooking.user_wants_to_get_info_by_passing_content_type_is(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "io.restassured.internal.RestAssuredResponseImpl@7495699f"
+            ],
+            "result": {
+              "duration": 1345035034,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "base url \"ticket/booking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ticket/booking",
+                  "offset": 10
+                }
+              ],
+              "location": "TicketBooking.base_url(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "201"
+            ],
+            "result": {
+              "duration": 3246894,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "expected status is \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 20
+                }
+              ],
+              "location": "TicketBooking.expected_status_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Rest Webservice",
+    "description": "",
+    "id": "testing-rest-webservice",
+    "keyword": "Feature",
+    "uri": "features/ticketBookingService.feature",
+    "tags": []
+  }
+]
